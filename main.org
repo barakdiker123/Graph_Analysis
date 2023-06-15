@@ -151,7 +151,7 @@ follows by induction on n
 * Question 4
 Find the number of possible walks of length 8 from 1 to 4 by the following undirected graph
 
-#+BEGIN_SRC dot :file Question1_graph.png
+#+BEGIN_SRC dot :file Question4_graph.png
 digraph auth {
 rankdir=LR;
 node [shape=record];
@@ -172,7 +172,7 @@ node [shape=record];
 
 
 #+RESULTS:
-[[file:Question1_graph.png]]
+[[file:Question4_graph.png]]
 ** Answer
 We'll Write the adjancey matrix and calculate the \( A^8 \)
 
@@ -192,7 +192,7 @@ A_to_power6[3][0]
 # output is 23
 #+end_example
 
-#+begin_src python :session :results value
+#+begin_src python :session :results value :exports none
 import numpy
 from numpy.linalg import matrix_power
 input_array = numpy.array([[0,1,1,0],
